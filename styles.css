@@ -1,0 +1,73 @@
+body {
+    background-color: lightblue;
+  }
+
+button {
+    background-color: white;
+    border: 2px solid black;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+button:hover {
+    background-color: lightgray;
+  }
+  
+  h1, p {
+    text-align: center;
+  }
+
+  h1{
+    font-size: 2.5em;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+ p {
+      font-size: 1.2em;
+   }
+
+  #playlist {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #song-select {
+    width: 200px; /* Optional: adjust width */
+  }
+
+  #playlist ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Optional: remove default padding */
+  }
+
+  #playlist ul li {
+    margin-bottom: 15px; /* Increased space between list items (adjust as needed) */
+  }
+
+  .remove-song {
+    background-color: #ff4d4d; /* Red background */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 2px 8px; /* Smaller padding for "X" */
+    cursor: pointer; /* Pointer cursor */
+    border-radius: 3px; /* Rounded corners */
+    font-size: 14px; /* Smaller font for "X" */
+  }
+  
+  .remove-song:hover {
+    background-color: #cc0000; /* Darker red on hover */
+  }
+
+  .song-container {
+    display: flex;
+    justify-content: space-between; /* Push song text and button apart */
+    align-items: center; /* Vertically center items */
+    width: 100%; /* Full width of the <ul> */
+  }
+  
+  .song-text {
+    flex: 1; /* Take up available space, pushing button to the right */
+    text-align: left; /* Ensure song text is left-aligned */
+  }
