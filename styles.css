@@ -3,10 +3,11 @@ body {
   }
 
 button {
-    background-color: white;
+    background-color: lightgreen;
     border: 2px solid black;
     padding: 10px;
     cursor: pointer;
+    border-radius: 15px;
   }
   
 button:hover {
@@ -27,6 +28,11 @@ button:hover {
       font-size: 1.2em;
    }
 
+   #add-song {
+    font-weight: bold;
+    font-size: 1em;
+   }
+
   #playlist {
     display: flex;
     flex-direction: column;
@@ -34,12 +40,19 @@ button:hover {
   }
   
   #song-select {
-    width: 200px; /* Optional: adjust width */
+    width: 200px;       /* Make it wider */
+    height: 40px;       /* Make it taller */
+    padding: 10px;      /* Add inner space for better look */
+    font-size: 16px;    /* Make text bigger */
+    border-radius: 8px; /* Optional: rounded corners */
   }
+  
 
   #playlist ul {
     list-style: none; /* Remove bullet points */
     padding: 0; /* Optional: remove default padding */
+    font-weight: bold; /* Bold text for list items */
+    font-size: 20px; /* Larger font size for better readability */
   }
 
   #playlist ul li {
